@@ -13,4 +13,8 @@
       name: nginx
       enabled: true
       state: started
+  - name: correct index.html is present
+    template:
+      src: index.html.j2
+      dest: /var/www/html/index.html
 

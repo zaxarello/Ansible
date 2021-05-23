@@ -1,2 +1,5 @@
 [group1]
 host01
+[all:vars]
+my_name=Сюртуков Захар
+has_8080=True
