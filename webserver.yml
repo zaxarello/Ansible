@@ -1,0 +1,16 @@
+---
+- name: Web server installed
+  hosts: group1
+  become: yes
+  tasks:
+  - name: latest nginx version installed
+    apt:
+     name: nginx-light
+     state: latest
+     update_cache: true
+  - name: ngix enabled and running
+    service:
+      name: nginx
+      enabled: true
+      state: started
+
