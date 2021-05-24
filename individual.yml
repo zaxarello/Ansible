@@ -1,0 +1,9 @@
+---
+- name: manage docker
+  hosts: group1
+  become: true
+  tasks:
+  - name: Install gpg 
+    apt:
+      name: gpg
+      state: latest
